@@ -684,10 +684,10 @@ h3.my-profession{
 
 .social-icon{
     margin-top: 200px;
-   
 }
 .social-icon .fa-brands{
     margin-left: 25px;
+    margin-bottom: 50px;
     font-size: 40px;
     cursor: pointer;
     color: var(--skin-color);
