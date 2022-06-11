@@ -756,6 +756,7 @@ h3.my-profession{
     }
     .home .home-img img{
         margin-top: 100px;
+        border-radius: 50%;
     }
     .home-img::after{
        display: none;
