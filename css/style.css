@@ -672,8 +672,26 @@ h3.my-profession{
     height: 50px;
     padding: 0 50px;
 }
+.social-icon-me{
+    margin: auto;
+    text-align: center;
+}
+.social-icon .text{
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: var(--skin-color);
+}
 
-
+.social-icon{
+    margin-top: 200px;
+   
+}
+.social-icon .fa-brands{
+    margin-left: 25px;
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--skin-color);
+}
 
 
 
@@ -727,6 +745,9 @@ h3.my-profession{
         max-width: 100%;
         margin-top: 100px;
     }
+    .home-img {
+        margin-bottom: 100px;
+      }
     .home .home-img{
         flex: 0 0 100%;
         max-width: 100%;
@@ -735,10 +756,17 @@ h3.my-profession{
         margin-top: 50px;
     }
     .home-img::after{
-        bottom: 0px;
+       display: none;
     }
     .home-img::before{
-        top: 50px;
+        display: none;
+    }
+    .social-icon{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .about .about-content .timeline{
+        margin-bottom: 50px;
     }
 }
 
@@ -760,5 +788,17 @@ h3.my-profession{
         height: auto;
         display: block;
     }
-
+    .home-img {
+        margin-bottom: 100px;
+      }
+    .social-icon{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .about .about-content .timeline{
+        margin-bottom: 50px;
+    }
+    .contact .contact-form .btn{
+        margin-bottom: 50px;
+    }
 }
