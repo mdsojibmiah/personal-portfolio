@@ -493,6 +493,11 @@ h3.my-profession{
     text-transform: capitalize;
     color:var(--text-black-900) ;
 }
+.academy{
+    font-size: 18px;
+    color: var(--skin-color);
+    margin-bottom: 10px;
+}
 .about .about-content .timeline .timeline-text{
     line-height: 25px;
     font-size: 16px;
@@ -776,10 +781,13 @@ h3.my-profession{
     }
     .about .about-content .timeline-box {
         margin-bottom: 50px;
-      }
-      .fa-solid, .fas {
+    }
+    .fa-solid, .fas {
         color:var(--skin-color);
-      }
+    }
+    .social-icon .fa-brands {
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width:767px){
@@ -812,5 +820,8 @@ h3.my-profession{
     }
     .contact .contact-form .btn{
         margin-bottom: 50px;
+    }
+    .social-icon .fa-brands {
+        margin-bottom: 100px;
     }
 }
