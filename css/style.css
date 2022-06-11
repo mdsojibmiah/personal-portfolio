@@ -681,7 +681,9 @@ h3.my-profession{
     font-size: 25px;
     color: var(--skin-color);
 }
-
+.section-title h2{
+    margin-top: 44px;
+}
 .social-icon{
     margin-top: 200px;
 }
@@ -753,7 +755,7 @@ h3.my-profession{
         max-width: 100%;
     }
     .home .home-img img{
-        margin-top: 50px;
+        margin-top: 100px;
     }
     .home-img::after{
        display: none;
@@ -768,6 +770,15 @@ h3.my-profession{
     .about .about-content .timeline{
         margin-bottom: 50px;
     }
+    .info-item #email{
+        font-size: 13px;
+    }
+    .about .about-content .timeline-box {
+        margin-bottom: 50px;
+      }
+      .fa-solid, .fas {
+        color:var(--skin-color);
+      }
 }
 
 @media (max-width:767px){
