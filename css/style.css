@@ -308,12 +308,13 @@ h3.my-profession{
     max-width: 40%;
     text-align: center;
     position: relative;
+    margin-top: 50px;
 }
 .home-img::after{
     content: '';
     position: absolute;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     right: 20px;
     bottom: -40px;
     border-bottom: 10px solid var(--skin-color);
@@ -322,8 +323,8 @@ h3.my-profession{
 .home-img::before{
     content: '';
     position: absolute;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     left: 20px;
     top: -40px;
     border-top: 10px solid var(--skin-color);
@@ -332,7 +333,7 @@ h3.my-profession{
 .home .home-img img{
     margin: auto;
     border-radius: 5px;
-    height: 350px;
+    height: 330px;
 }
 /* =================Home start=========== */
 
@@ -526,7 +527,7 @@ h3.my-profession{
 .service .service-item .service-item-inner:hover{
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-.service .service-item .service-item-inner .icon{
+.service .service-item .service-item-inner .icon1{
     height:60px;
     width: 60px;
     border-radius: 50%;
@@ -535,16 +536,16 @@ h3.my-profession{
     text-align: center;
     transition: aall 0.3s ease;
 }
-.service .service-item .service-item-inner .icon .fa{
+.service .service-item .service-item-inner .icon1 .fa{
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
     transition: aall 0.3s ease;
 }
-.service .service-item .service-item-inner:hover .icon{
+.service .service-item .service-item-inner:hover .icon1{
     background: var(--skin-color);
 }
-.service .service-item .service-item-inner:hover .icon .fa{
+.service .service-item .service-item-inner:hover .icon1 .fa{
     font-size: 25px;
     color: #ffffffff;
 }
@@ -619,10 +620,10 @@ h3.my-profession{
     text-align: center;
     margin-bottom: 60px;
 }
-.contact .contact-info-item .icon{
+.contact .contact-info-item .icon2{
     display: inline-block;
 }
-.contact .contact-info-item .icon .fa{
+.contact .contact-info-item .icon2 .fa{
     color: var(--skin-color);
     font-size: 25px;
 }
@@ -638,6 +639,9 @@ h3.my-profession{
     line-height: 25px;
     color: var(--text-black-700);
     font-weight: 400;
+}
+form {
+	width: 100%;
 }
 
 .contact .contact-form{
@@ -702,6 +706,61 @@ h3.my-profession{
 
 
 
+
+.social-icon {
+	width: 350px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	margin-top: 50px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    color: white;
+    position: relative;
+    transition: all .4s;
+}
+.icon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to right, #c21500, #ffc500); */
+    background: var(--skin-color);
+    transform: scale(0.2, 1.05);
+    transition: transform .4s;
+}
+.icon:hover::before{
+    transform: scale(1, 0.2);
+}
+#icon{
+    background: rgba(255, 255, 255, 0);
+    padding: 10%;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
+    filter: drop-shadow(0 0 20px black);
+    /* -moz-filter:drop-shadow(0 0 20px black); */
+    transition: all .4s;
+    -moz-bac
+
+
+}   
+.icon:hover #icon{
+     border-radius: 5px;
+}
+
+
+
+
 @media (max-width:1199px) {
     
     .section .container{
@@ -759,8 +818,8 @@ h3.my-profession{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img img{
-        margin-top: 100px;
+    .home .home-img img {
+        margin-top: 20px;
         border-radius: 50%;
     }
     .home-img::after{
@@ -776,11 +835,11 @@ h3.my-profession{
     .about .about-content .timeline{
         margin-bottom: 50px;
     }
+    .about .about-content .timeline-box {
+        margin-bottom: 0px;
+    }
     .info-item #email{
         font-size: 13px;
-    }
-    .about .about-content .timeline-box {
-        margin-bottom: 50px;
     }
     .fa-solid, .fas {
         color:var(--skin-color);
@@ -811,9 +870,24 @@ h3.my-profession{
     .home-img {
         margin-bottom: 100px;
       }
-    .social-icon{
-        margin-top: 50px;
+    .social-icon {
+        margin-top: -29px;
         margin-bottom: 50px;
+    }
+    .social-icon .fa-3x {
+        font-size: 2em;
+    }
+    .social-icon .icon::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        /* background: linear-gradient(to right, #c21500, #ffc500); */
+        background: var(--skin-color);
+        transform: scale(0.2, 1.05);
+        transition: transform .4s;
     }
     .about .about-content .timeline{
         margin-bottom: 50px;
@@ -823,5 +897,9 @@ h3.my-profession{
     }
     .social-icon .fa-brands {
         margin-bottom: 100px;
+    }
+    .bIBMON {
+        margin: 90px 20px 25px;
+        
     }
 }
